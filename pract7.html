@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="s()">submit</button>
+
+    <script>
+        function s(){
+            //$(document).ready
+            $.ajax({
+                dataType:'json',
+                url : 'index.json',
+                request : 'get',
+
+                success: function(data){
+                    //console.log(data)
+                    //document.getElementById(pet1)
+                    $.each(data, function(key,val){
+                        $.each(val, function(i,j){
+
+                            console.log(i,j);
+                            $("b").text(key,val);
+                        })
+                        
+                    })
+             }
+            })
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(196, 66, 66);
+}
+h1 {
+    color: rgb(13, 13, 17);
+    font-size: 50px;
+}
+.l{
+    width: 400px;
+    margin: auto;
+    margin: 20 0 0 450px;
+    padding: 80px;
+    background: #9ff71b;
+    border-radius: 15px ;
+}
+    
+h2{
+    background-color:light-yellow;
+    color:rgb(224, 34, 34);
+    text-align:center-right;
+    width:500px;
+}
+    
+.img {
+    padding-left:100px;
+}

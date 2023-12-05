@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="bike1.png" id="img1" onmouseover="zoomin()" onmouseout="zoomout()">
+   
+    <form >
+        <input type="button" value="start" onclick="change()">
+        <input type="button" value="stop" onclick="stop()" >
+    </form>
+    <script>
+        var pad = 0;
+        var time;
+
+        function zoomin(){
+            document.getElementById("img1").style.width=623+"px"
+            document.getElementById("img1").style.width=722+"px"
+        }
+        function zoomout(){
+            document.getElementById("img1").style.width=523+"px"
+            document.getElementById("img1").style.width=622+"px"
+        }
+        function change(){
+            time= setInterval(image,100);
+        }
+        function stop(){
+            clearInterval(time);
+        }
+        
+
+    function image(){
+        document.getElementById("img1").style.paddingLeft=pad+"px";
+        pad = pad+100;
+        if(pad >window.innerWidth-593){
+            pad=0
+        }
+    }
+    change();
+    </script>
+    
+</body>
+</html>

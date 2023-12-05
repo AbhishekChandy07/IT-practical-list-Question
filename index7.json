@@ -1,0 +1,19 @@
+{
+    "pet1" : {
+        "name" : "moti",
+        "Age" : "4",
+        "Type" : "cat"
+    },
+
+    "pet2" : {
+        "name" : "rockey",
+        "Age" : "6",
+        "Type" : "dog"
+    },
+
+    "pet3" : {
+        "name" : "shera",
+        "Age" : "9",
+        "Type" : "goat"
+    }
+}
